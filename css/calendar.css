@@ -1,0 +1,171 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  background: radial-gradient(
+    circle farthest-corner at 32.7% 82.7%,
+    hwb(301 0% 32%) 8.3%,
+    rgba(15, 51, 92, 1) 79.4%
+  );
+}
+
+.calendar {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.calendar__show {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sidebar {
+  width: 600px;
+}
+
+.sidebar__concert h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  color: white;
+}
+
+.sidebar__concert p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 14px 10px;
+  margin-top: 15px;
+  color: white;
+}
+
+.short-line {
+  width: 540px;
+  margin-left: 10px;
+
+}
+
+.offer__list {
+  margin-top: 42px;
+}
+
+.offer__link {
+  margin-bottom: 16px;
+}
+
+.offer__link h3 {
+  font-size: 1.2rem;
+  padding-left: 10px;
+  color: white;
+}
+
+.offer__link p {
+   font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 0.5;
+  padding: 10px 10px;
+  color: white;
+}
+.calendar__base {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 10px 10px 16px -2px rgba(85, 150, 230, 0.75);
+  transition: ease-in-out 0.3s;
+}
+
+.calendar__picture {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  color: white;
+  background: #262626 url("../img/band-jazz-bond.jpg") no-repeat center / cover;
+  border-radius: 12px 12px 0 0;
+}
+.calendar__picture h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-left: 16px;
+}
+
+.calendar__picture h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.calendar__date {
+  width: 382px;
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  /* flex-basis: calc((100% - 40px) / 7); */
+  margin: 0 auto;
+}
+
+.calendar__day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-weight: 600;
+  color: #262626;
+  border: 1px solid #595be0;
+  border-radius: 4px;
+}
+
+.calendar__day:nth-child(7) {
+  color: red;
+}
+
+.calendar__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  color: #262626;
+  border: 1px solid #595be0;
+  border-radius: 4px;
+}
+
+.calendar__number:nth-child(7n) {
+  color: red;
+  font-weight: 700;
+}
+
+.calendar__number:hover {
+  background-color: rgb(158, 61, 129);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.calendar__number-note {
+  background-color: rgb(227, 210, 241);
+}
+
+
